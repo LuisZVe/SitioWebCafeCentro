@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Centro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #838282;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #ecf0f1;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: #838282;
+        }
+
+        main {
+            background-color: #838282;
+            padding-top: 20px;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            border: 1px solid #e1e1e1;
+        }
+
+        .card-body {
+            color: #2c3e50;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ecf0f1;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f39c12;
+        }
+
+        .btn-primary {
+            background-color: #f39c12;
+            border-color: #f39c12;
+        }
+
+        .btn-primary:hover {
+            background-color: #e67e22;
+            border-color: #e67e22;
+        }
+
+        .carousel-caption h5 {
+            color: #ecf0f1;
+        }
+
+        .carousel-caption p {
+            color: #ecf0f1;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Café del Centro</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Productos">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contactos">Contactos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar producto"
+                            aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="carouselExampleCaptions" class="carousel slide">
+            <section id="Inicio">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner" style="width: 100%; height: 600px; object-fit: cover;">
+                    <div class="carousel-item active">
+                        <picture>
+                            <img src="ImagenesyLogo/Cafe_Expresso.jpg" class="d-block w-100" alt="..." style="width: 100%; height: 600px; object-fit: cover;">
+                        </picture>
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Cafe</h5>
+                            <p>Bebida caliente muy popular en muchos países del mundo, simple y exquisita</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <picture>
+                            <img src="ImagenesyLogo/Croissant_de_Mantequilla.jpg" class="d-block w-100" alt="..." style="width: 100%; height: 600px; object-fit: cover;">
+                        </picture>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Snacks</h5>
+                            <p>Bollo de hojaldre en forma de media luna, conocido por su textura ligera, crujiente y su
+                                sabor mantecoso.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <picture>
+                            <img src="ImagenesyLogo/cold_brew.jpg" class="d-block w-100" alt="..." style="width: 100%; height: 600px; object-fit: cover;">
+                        </picture>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Bebidas Heladas</h5>
+                            <p>Prueba una versión fría de tu café favorito, para una mayor fuerza refrescante</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </section>
+        </section>
+        <div class="container">
+            <section class="p-4">
+                <section id="Productos">
+                    <h2>Nuestros Productos</h2>
+                    <div class="row justify-content-center g-3">
+                        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="ImagenesyLogo/Croissant_de_Mantequilla.jpg" class="card-img-top" alt="..."
+                                    style="width: 100%; height: 200px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Croissant de Mantequilla</h5>
+                                    <p class="card-text">Un croissant suave y hojaldrado que acompaña perfectamente
+                                        cualquier bebida caliente.</p>
+                                    <a href="#" class="btn btn-primary w-100 mt-auto">Comprar ahora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="ImagenesyLogo/Cafe_Americano.jpg" class="card-img-top" alt="..."
+                                    style="width: 100%; height: 200px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Cafe Americano</h5>
+                                    <p class="card-text">Un espresso diluido en agua caliente, perfecto para quienes
+                                        prefieren un sabor
+                                        más suave pero con cuerpo</p>
+                                    <a href="#" class="btn btn-primary w-100 mt-auto">Comprar ahora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="ImagenesyLogo/Cafe_Expresso.jpg" class="card-img-top" alt="..."
+                                    style="width: 100%; height: 200px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Cafe Expresso</h5>
+                                    <p class="card-text">El café más fuerte, ideal para los amantes de la intensidad.
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-100 mt-auto">Comprar ahora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="ImagenesyLogo/Cafe_Mocha.jpg" class="card-img-top" alt="..."
+                                    style="width: 100%; height: 200px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Cafe Mocha</h5>
+                                    <p class="card-text">Un espresso combinado con chocolate caliente y leche, perfecto
+                                        para aquellos que disfrutan del dulce toque del chocolate.</p>
+                                    <a href="#" class="btn btn-primary w-100 mt-auto">Comprar ahora</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="ImagenesyLogo/Cappuccino.jpg" class="card-img-top" alt="..."
+                                    style="width: 100%; height: 200px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Cappuccino</h5>
+                                    <p class="card-text">Espresso con leche espumada, con una capa ligera de espuma en
+                                        la parte superior.</p>
+                                    <a href="#" class="btn btn-primary w-100 mt-auto">Comprar ahora</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="ImagenesyLogo/Café_Descafeinado.jpg" class="card-img-top" alt="..."
+                                    style="width: 100%; height: 200px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Café Descafeinado</h5>
+                                    <p class="card-text">Para quienes quieren el sabor del café pero sin los efectos de
+                                        la cafeína.</p>
+                                    <a href="#" class="btn btn-primary w-100 mt-auto">Comprar ahora</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="ImagenesyLogo/Iced_Americano.jpg" class="card-img-top" alt="..."
+                                    style="width: 100%; height: 200px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Iced Americano</h5>
+                                    <p class="card-text">Café espresso diluido en agua con hielo, para quienes buscan
+                                        algo refrescante pero fuerte.</p>
+                                    <a href="#" class="btn btn-primary w-100 mt-auto">Comprar ahora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="ImagenesyLogo/Iced_Latte.jpg" class="card-img-top" alt="..."
+                                    style="width: 100%; height: 200px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Iced Latte</h5>
+                                    <p class="card-text">Café con leche frío, servido con hielo, perfecto para un día
+                                        caluroso.</p>
+                                    <a href="#" class="btn btn-primary w-100 mt-auto">Comprar ahora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="ImagenesyLogo/Iced_Mocha.jpg" class="card-img-top" alt="..."
+                                    style="width: 100%; height: 200px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Iced Mocha</h5>
+                                    <p class="card-text">Un mocha frío con hielo, para los amantes del café y el
+                                        chocolate en días cálidos.</p>
+                                    <a href="#" class="btn btn-primary w-100 mt-auto">Comprar ahora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="ImagenesyLogo/cold_brew.jpg" class="card-img-top" alt="..."
+                                    style="width: 100%; height: 200px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Cold Brew</h5>
+                                    <p class="card-text">Café preparado en frío, suave y refrescante, ideal para los que
+                                        buscan algo más ligero.</p>
+                                    <a href="#" class="btn btn-primary w-100 mt-auto">Comprar ahora</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="ImagenesyLogo/Frapucciono_de_Cafe.jpg" class="card-img-top" alt="..."
+                                    style="width: 100%; height: 200px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Frapucciono de Cafe</h5>
+                                    <p class="card-text">Bebida fría de café mezclado con hielo y leche, muy popular
+                                        para los que prefieren una textura más cremosa.</p>
+                                    <a href="#" class="btn btn-primary w-100 mt-auto">Comprar ahora</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="ImagenesyLogo/Té_Chai_Latte.jpg" class="card-img-top" alt="..."
+                                    style="width: 100%; height: 200px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Té Chai Latte</h5>
+                                    <p class="card-text">Té especiado con leche, una opción deliciosa para quienes no
+                                        quieren café pero buscan una bebida reconfortante.</p>
+                                    <a href="#" class="btn btn-primary w-100 mt-auto">Comprar ahora</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </section>
+            <section class="d-flex align-items-center flex-column flex-md-row-reverse ">
+                <section id="Nosotros">
+                    <div class="w-100 w-md-50 p-4">
+                        <h2 class="text-center" style="font-weight: bold;">Sobre Nosotros</h2>
+                        <p style="font-size: 1.4rem;">Somos una gran compañia enfocada en brindar la
+                            mejor calidad en base a productos y servicios,
+                            con mas de 20 años de experiencia, no solo impartimos nuestro deleite, sino que tambien
+                            continuamos aprendiendo.</p>
+                        </p>
+                    </div>
+                </section>
+            </section>
+            <section class="d-flex align-items-center flex-column flex-md-row-reverse ">
+                <section id="Contactos">
+                    <div class="w-100 w-md-50 p-4">
+                        <h2 class="text-center" style="font-weight: bold;">Contactos</h2>
+                        <p class="text-center" style="font-size: 1.4rem;">Si deseas ponerte en contacto con nosotros,
+                            tienes las puertas abiertas, nosotros te recibiremos con las manos abiertas</p>
+                        <p class="text-center" style="font-size: 1.4rem;">Direccion: Ubicado en el Parque Ramon Rosa de
+                            El Paraiso, Honduras</p>
+                        <p class="text-center" style="font-size: 1.4rem;">Telefono: +504 4990-5990</p>
+                        <p class="text-center" style="font-size: 1.4rem;"> Correo: Cafecentro0880@gmail.com</p>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+    <footer class="py-1 my-0">
+        <p class="text-center text-body-secondary">© 2025 Cafe Centro, Express Inc. <br>
+            Todos los dererechos Reservados</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
